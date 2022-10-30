@@ -7,7 +7,7 @@ max_upload_size: 1024
 
 [file_manager]
 # post processing for object cancel. Not recommended for low resource SBCs such as a Pi Zero. Default False
-enable_object_processing: True
+enable_object_processing: False
 
 [authorization]
 cors_domains:
@@ -23,18 +23,10 @@ trusted_clients:
     192.168.0.0/16
     FE80::/10
     ::1/128
-    100.94.3.69
-    100.66.188.70
-    100.76.207.118
-    100.72.199.104
-    70.102.219.84
-    100.110.254.127
-
-# enables partial support of Octoprint API
-[octoprint_compat]
-
-# enables moonraker to track and store print history.
-[history]
+    100.94.3.69 100.66.188.70# enables partial support of Octoprint API 
+    100.76.207.118[octoprint_compat] 100.72.199.104 70.102.219.84# 
+    enables moonraker to track and store print history.
+    100.110.254.127[history]
 
 # this enables moonraker announcements for mainsail
 [announcements]
