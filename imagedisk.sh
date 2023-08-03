@@ -1,3 +1,2 @@
 #! /usr/bin/bash
-
-raspiBackup -m detailed
+sudo ~/usr/local/bin/raspiBackup -m detailed
